@@ -1,0 +1,130 @@
+/* ... manter o restante do CSS anterior ... */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  .carousel-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+  
+  .carousel {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 75%;
+    position: relative;
+  }
+  
+  .carousel-slider {
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+    width: 100%;
+  }
+
+/* Carousel Slider (AUMENTA ALTURA) */
+.carousel img {
+    width: 100%;
+    height: 400px; /* Mantemos a altura que você achou ideal */
+    max-width: 100%;
+    object-fit: cover;
+    flex: 0 0 100%; /* Garante que cada imagem ocupe 100% do carrossel sem quebrar */
+  }
+
+  .carousel video {
+    width: 100%;
+    height: 47vh;
+    object-fit: cover;
+    flex: 0 0 100%;
+  }
+  
+  
+  
+  /* NOVO estilo para os controles na parte de baixo */
+  .controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px 0;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ddd;
+  }
+  
+  .controls button {
+    background: #007bff;
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    flex-wrap: wrap;
+  }
+  
+  .buttons a {
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+  }
+  
+  .buttons a:hover {
+    background-color: #0056b3;
+  }
+  
+  .controls button:hover {
+    background: #0056b3;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .carousel {
+      max-width: 90%;
+    }
+  
+    .buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .carousel video {
+        height: 20vh;
+    }
+  
+    .controls {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  }
+  
