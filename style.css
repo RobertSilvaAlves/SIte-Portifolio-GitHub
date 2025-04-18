@@ -1,4 +1,4 @@
-/* ... manter o restante do CSS anterior ... */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 * {
     box-sizing: border-box;
@@ -9,13 +9,18 @@
   body {
     font-family: Arial, sans-serif;
     background: #f4f4f4;
-    padding: 20px;
+    background-image: url(89787.jpg);
   }
   
   h1 {
+    font-family: "Righteous", sans-serif;
     text-align: center;
-    color: #333;
+    color: #ffffff;
+    padding: 3px;
     margin-bottom: 40px;
+    font-size: 3.5em;
+    text-shadow: 3px 3px 5px rgb(255, 0, 0);
+    
   }
   
   .carousel-container {
@@ -26,9 +31,9 @@
   }
   
   .carousel {
-    background: #fff;
+    background: transparent;
     border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    
     overflow: hidden;
     width: 100%;
     max-width: 75%;
@@ -59,7 +64,7 @@
   
   
   
-  /* NOVO estilo para os controles na parte de baixo */
+
   .controls {
     display: flex;
     justify-content: center;
@@ -85,8 +90,7 @@
     justify-content: center;
     gap: 20px;
     padding: 15px;
-    background-color: #f9f9f9;
-    border-top: 1px solid #ddd;
+    background-color: transparent;
     flex-wrap: wrap;
   }
   
@@ -106,7 +110,33 @@
   .controls button:hover {
     background: #0056b3;
   }
+
+  .rodape {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 1.5em 0;
+  }
+
+  .rodape__texto{
+    padding: 1em;
+  }
   
+
+  .rodape__texto-link{
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+  }
+
+  .rodape__texto-link:hover{
+    color: #007bff;
+    font-family: "Righteous", sans-serif;
+    padding: 1em;
+    transition: 1s;
+    margin: 1.5em 0;
+  }
+
   /* Responsividade */
   @media (max-width: 768px) {
     .carousel {
